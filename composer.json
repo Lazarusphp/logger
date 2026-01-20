@@ -1,6 +1,6 @@
 {
     "name": "lazarausphp/logger",
-    "description": "Psr-3 Colmpliant Logger for LazarausPhp framework",
+    "description": "Psr-3 compliant Logger for LazarausPhp framework",
     "type": "library",
     "autoload": {
         "psr-4": {
