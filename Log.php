@@ -1,10 +1,11 @@
 <?php
-namespace LazarusPhp\Logger;
-use LazarusPhp\Logger\Logger;
+namespace ElegenceIO\Logger;
+use ElegenceIO\Logger\Logger;
 use LogicException;
-use LazarusPhp\Logger\Level;
+use ElegenceIO\Logger\Level;
+use Stringable;
 
-class FileLogger extends Logger
+class Log extends Logger
 { 
     protected string $file = "";
 
@@ -18,7 +19,7 @@ class FileLogger extends Logger
         $this->file = $file;
     }
 
-    private function isHandling($level,$message,$context)
+    private function isHandling(mixed $level,string|Stringable $message,array $context)
     {
         return match ($level) {
             Level::Emergency => $this->emergency($message, $context),

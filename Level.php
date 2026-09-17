@@ -1,5 +1,5 @@
 <?php
-namespace LazarusPhp\Logger;
+namespace ElegenceIO\Logger;
 
 enum Level:int
 {
